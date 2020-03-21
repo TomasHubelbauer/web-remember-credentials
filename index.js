@@ -1,6 +1,8 @@
 window.addEventListener('load', () => {
-  const authForm = document.getElementById('authForm');
-  authForm.addEventListener('submit', () => {
-    event.preventDefault();
-  });
+  const authForms = document.querySelectorAll('.authForm');
+  for (const authForm of authForms) {
+    authForm.addEventListener('submit', () => {
+      event.preventDefault();
+    });
+  }
 });

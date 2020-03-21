@@ -11,6 +11,14 @@ Seeing how to make the browser offer to remember your credentials in a web app.
 
 Run `index.html`.
 
+## Testing
+
+Submit any of the forms. Once you've done so and saved the credentials, they
+will be pre-filled and you won't be able to emulate this unless you remove them
+throught the Settings. There is an easier way to keep testing though: change the
+password to a new value and observe the behavior of the *update credentials*
+prompt, which is triggered under similar conditions.
+
 ## Support
 
 I only tested this in Firefox, because it is for a personal project and I don't
@@ -32,3 +40,11 @@ This also works, the `input` need not have a `name`.
 Again, the `input` need not have a `name` and with `preventDefault`, the prompt
 still shows. In fact, it appears to appear before the form submission navigation
 even occurs (or, would occur).
+
+### `form` with `input[type=password]` only with `button` instead of `input[type=submit]`, handled
+
+It is well known that any button in a `form` will submit it, even it it lacks
+`type=submit`. This is frequently used even in non-SPAs to be able to use richer
+display in the `button`, such that is not provided by `input[type=submit]`.
+
+Turns out this also triggers the prompt!
