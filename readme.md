@@ -11,6 +11,9 @@ Seeing how to make the browser offer to remember your credentials in a web app.
 
 Run `index.html`.
 
+This site is also served using GitHub Pages on
+https://tomashubelbauer.github.io/web-remember-credentials.
+
 ## Testing
 
 Submit any of the forms. Once you've done so and saved the credentials, they
@@ -23,6 +26,9 @@ prompt, which is triggered under similar conditions.
 
 I only tested this in Firefox, because it is for a personal project and I don't
 care about other browsers in this case.
+
+I also tried with mobile Safari, but in it, it does not work.
+It should be possible to fix that using https://stackoverflow.com/a/60607611/2715716.
 
 ## Scenarios
 
