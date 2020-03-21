@@ -32,6 +32,10 @@ care about other browsers in this case.
 I also tried with mobile Safari, but in it, it does not work.
 It should be possible to fix that using https://stackoverflow.com/a/60607611/2715716.
 
+I have tried that with a handled form, but it seems to require form submission,
+and with that, it no longer requires the `autocomplete` attributes. It requires
+that both user name and password fields exist, password only is not enough.
+
 ## Scenarios
 
 ### `form` with `input[type=text]` and `input[type=password]`, submitted
