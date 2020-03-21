@@ -1,5 +1,7 @@
 # Web Remember Credentials
 
+https://github.com/TomasHubelbauer/web-remember-credentials
+
 Seeing how to make the browser offer to remember your credentials in a web app.
 
 ## Sources
